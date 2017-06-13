@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_NEWyAKTKEeWqm_k-6i7EbA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_NFjFEaTKEeWqm_k-6i7EbA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_NFjFE6TKEeWqm_k-6i7EbA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NEf78KTKEeWqm_k-6i7EbA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_NEf78aTKEeWqm_k-6i7EbA" name="searchengin">
+      <packagedElement xmi:type="uml:Package" xmi:id="_NEf78qTKEeWqm_k-6i7EbA" name="client">
+        <packagedElement xmi:type="uml:Class" xmi:id="_NEf786TKEeWqm_k-6i7EbA" name="RunFile">
+          <ownedAttribute xmi:id="_NFjFEqTKEeWqm_k-6i7EbA" name="PERIODTIME" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_NFjFFKTKEeWqm_k-6i7EbA" name="SOURCEPATH" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_NFjFFaTKEeWqm_k-6i7EbA" name="getPeriodTime" visibility="protected">
+            <ownedParameter xmi:id="_NFjFFqTKEeWqm_k-6i7EbA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_NFjFF6TKEeWqm_k-6i7EbA" name="getSourcePath" visibility="protected">
+            <ownedParameter xmi:id="_NFjFGKTKEeWqm_k-6i7EbA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_NFjFGaTKEeWqm_k-6i7EbA" name="contextDestroyed" visibility="public">
+            <ownedParameter xmi:id="_NFjFGqTKEeWqm_k-6i7EbA" name="arg0" type="_NFGY5qTKEeWqm_k-6i7EbA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_NFjFG6TKEeWqm_k-6i7EbA" name="contextInitialized" visibility="public">
+            <ownedParameter xmi:id="_NFjFHKTKEeWqm_k-6i7EbA" name="arg0" type="_NFGY5qTKEeWqm_k-6i7EbA"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NEf79KTKEeWqm_k-6i7EbA" name="file">
+        <packagedElement xmi:type="uml:Class" xmi:id="_NEf79aTKEeWqm_k-6i7EbA" name="OPFile">
+          <ownedOperation xmi:id="_NFjFHaTKEeWqm_k-6i7EbA" name="singleParserSohuNews" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_NFjFHqTKEeWqm_k-6i7EbA" name="htmlContent">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_NFjFH6TKEeWqm_k-6i7EbA" name="outputPath">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_NFjFIKTKEeWqm_k-6i7EbA" name="saveData" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_NFjFIaTKEeWqm_k-6i7EbA" name="inputPath">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_NFjFIqTKEeWqm_k-6i7EbA" name="copyFile" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_NFjFI6TKEeWqm_k-6i7EbA" name="sourceFile" type="_NFGY7KTKEeWqm_k-6i7EbA"/>
+            <ownedParameter xmi:id="_NFjFJKTKEeWqm_k-6i7EbA" name="targetFile" type="_NFGY7KTKEeWqm_k-6i7EbA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_NFsOwKTKEeWqm_k-6i7EbA" name="getFileFullNameFromPath" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_NFsOwaTKEeWqm_k-6i7EbA" name="path">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_NFsOwqTKEeWqm_k-6i7EbA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NEf79qTKEeWqm_k-6i7EbA" name="full">
+        <packagedElement xmi:type="uml:Package" xmi:id="_NEf796TKEeWqm_k-6i7EbA" name="config">
+          <packagedElement xmi:type="uml:Class" xmi:id="_NEf7-KTKEeWqm_k-6i7EbA" name="InitParams">
+            <generalization xmi:id="_NGlmoqTKEeWqm_k-6i7EbA" general="_NGlmoaTKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NFsOw6TKEeWqm_k-6i7EbA" name="PROPERTIES_NAME" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsOxKTKEeWqm_k-6i7EbA" value="file.properties"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NFsOxaTKEeWqm_k-6i7EbA" name="DATABASE_URL" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsOxqTKEeWqm_k-6i7EbA" value="database_url"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NFsOx6TKEeWqm_k-6i7EbA" name="DATABASE_USER" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsOyKTKEeWqm_k-6i7EbA" value="database_user"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NFsOyaTKEeWqm_k-6i7EbA" name="DATABASE_PASSWORD" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsOyqTKEeWqm_k-6i7EbA" value="database_password"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NFsOy6TKEeWqm_k-6i7EbA" name="INDEXTABLE" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsOzKTKEeWqm_k-6i7EbA" value="indexTable"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NFsOzaTKEeWqm_k-6i7EbA" name="SOURCE_FILEPATH" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsOzqTKEeWqm_k-6i7EbA" value="source_filepath"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NFsOz6TKEeWqm_k-6i7EbA" name="TXT_FILEPATH" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsO0KTKEeWqm_k-6i7EbA" value="txt_filepath"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NFsO0aTKEeWqm_k-6i7EbA" name="COPY_FILEPATH" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsO0qTKEeWqm_k-6i7EbA" value="copy_filepath"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NFsO06TKEeWqm_k-6i7EbA" name="PERIOD" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NFsO1KTKEeWqm_k-6i7EbA" value="period"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NGlmpKTKEeWqm_k-6i7EbA" name="SEARCH_PROPERTIES" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmpaTKEeWqm_k-6i7EbA" name="DATABASE_URL" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmpqTKEeWqm_k-6i7EbA" name="DATABASE_USER" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmp6TKEeWqm_k-6i7EbA" name="DATABASE_PASSWORD" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmqKTKEeWqm_k-6i7EbA" name="INDEX_TABLE" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmqaTKEeWqm_k-6i7EbA" name="INDEX_COUNT" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmqqTKEeWqm_k-6i7EbA" name="INDEX_TYPE" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmq6TKEeWqm_k-6i7EbA" name="INDEX_PERIOD" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmrKTKEeWqm_k-6i7EbA" name="SOLR_URL" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmraTKEeWqm_k-6i7EbA" name="SERVERNAME" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmrqTKEeWqm_k-6i7EbA" name="SERVERTYPE" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmr6TKEeWqm_k-6i7EbA" name="UNIQUEKEY" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmsKTKEeWqm_k-6i7EbA" name="INDEX_SQL" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmsaTKEeWqm_k-6i7EbA" name="ADD_INDEX" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlmsqTKEeWqm_k-6i7EbA" name="UPDATE_INDEX" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedAttribute xmi:id="_NGlms6TKEeWqm_k-6i7EbA" name="DELETE_INDEX" visibility="public" isStatic="true" type="_NGlmo6TKEeWqm_k-6i7EbA"/>
+            <ownedOperation xmi:id="_NGlmtKTKEeWqm_k-6i7EbA" name="&lt;clinit>" visibility="package" isStatic="true"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NEf7-aTKEeWqm_k-6i7EbA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_NEf7-qTKEeWqm_k-6i7EbA" name="DataBaseUtils">
+          <ownedAttribute xmi:id="_NFsO1aTKEeWqm_k-6i7EbA" name="URL" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_NFsO1qTKEeWqm_k-6i7EbA" name="USER" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_NFsO16TKEeWqm_k-6i7EbA" name="PASSWORD" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_NFsO2KTKEeWqm_k-6i7EbA" name="getConnection" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_NFsO2aTKEeWqm_k-6i7EbA" name="return" type="_NFGY8KTKEeWqm_k-6i7EbA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_NFsO2qTKEeWqm_k-6i7EbA" name="closeConnection" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_NFsO26TKEeWqm_k-6i7EbA" name="conn" type="_NFGY8KTKEeWqm_k-6i7EbA"/>
+            <ownedParameter xmi:id="_NFsO3KTKEeWqm_k-6i7EbA" name="pstmt" type="_NFGY8aTKEeWqm_k-6i7EbA"/>
+            <ownedParameter xmi:id="_NFsO3aTKEeWqm_k-6i7EbA" name="stmt" type="_NFGY86TKEeWqm_k-6i7EbA"/>
+            <ownedParameter xmi:id="_NFsO3qTKEeWqm_k-6i7EbA" name="rs" type="_NFGY8qTKEeWqm_k-6i7EbA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY6KTKEeWqm_k-6i7EbA" name="StringUtils"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NFGZAqTKEeWqm_k-6i7EbA" name="config">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFGZA6TKEeWqm_k-6i7EbA" name="ConstantParams"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NFGY4KTKEeWqm_k-6i7EbA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_NFGY4aTKEeWqm_k-6i7EbA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY4qTKEeWqm_k-6i7EbA" name="Timer"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY46TKEeWqm_k-6i7EbA" name="TimerTask"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NFGY9KTKEeWqm_k-6i7EbA" name="regex">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY9aTKEeWqm_k-6i7EbA" name="Matcher"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY9qTKEeWqm_k-6i7EbA" name="Pattern"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NFGY6aTKEeWqm_k-6i7EbA" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY6qTKEeWqm_k-6i7EbA" name="BufferedInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY66TKEeWqm_k-6i7EbA" name="BufferedOutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY7KTKEeWqm_k-6i7EbA" name="File"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY7aTKEeWqm_k-6i7EbA" name="FileInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY7qTKEeWqm_k-6i7EbA" name="FileOutputStream"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NFGY76TKEeWqm_k-6i7EbA" name="sql">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY8KTKEeWqm_k-6i7EbA" name="Connection"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY8aTKEeWqm_k-6i7EbA" name="PreparedStatement"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY8qTKEeWqm_k-6i7EbA" name="ResultSet"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY86TKEeWqm_k-6i7EbA" name="Statement"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGZBKTKEeWqm_k-6i7EbA" name="DriverManager"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NGlmoKTKEeWqm_k-6i7EbA" name="lang">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NGlmoaTKEeWqm_k-6i7EbA" name="Object"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NGlmo6TKEeWqm_k-6i7EbA" name="String"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NFGY5KTKEeWqm_k-6i7EbA" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_NFGY5aTKEeWqm_k-6i7EbA" name="servlet">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY5qTKEeWqm_k-6i7EbA" name="ServletContextEvent"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY56TKEeWqm_k-6i7EbA" name="ServletContextListener"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NFGY96TKEeWqm_k-6i7EbA" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_NFGY-KTKEeWqm_k-6i7EbA" name="htmlparser">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY-aTKEeWqm_k-6i7EbA" name="Node"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY-qTKEeWqm_k-6i7EbA" name="NodeFilter"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY-6TKEeWqm_k-6i7EbA" name="Parser"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NFGY_KTKEeWqm_k-6i7EbA" name="filters">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY_aTKEeWqm_k-6i7EbA" name="AndFilter"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY_qTKEeWqm_k-6i7EbA" name="HasAttributeFilter"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFGY_6TKEeWqm_k-6i7EbA" name="TagNameFilter"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NFGZAKTKEeWqm_k-6i7EbA" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFGZAaTKEeWqm_k-6i7EbA" name="NodeList"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
